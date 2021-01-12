@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="css/bootstrap.css" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-2.1.3.min.js"></script>
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js"></script>  
+
+
+    <style>
+        .cityimg {
+            width: 180px;
+        }
+    </style>
+</head>
+
+<body>
+    
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid d-flex justify-content-around">
+            <div>
+                <a class="navbar-brand text-info fw-bold" href="#">Best City Guide</a>
+            </div>
+            <div>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav">
+                    <span class="navbar-toggler-icon"></span>
+                    
+                </button>
+                
+                <div class="collapse navbar-collapse" id="navbarNav">
+
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link text-info" href="#">ICE CREAM</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-info" href="#">DONUTS</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-info" href="#">TEA</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-info" href="#">COFFEE</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <div class="container-fluid text-center text-white bg-info py-3 my-2">
+        <img class="cityimg" src="images/city.svg" alt="city">
+        <h1>The Best City</h1>
+        <h3>The best drinks and eats in the best city ever.</h3>
+    </div>
+
+    <div class="row container m-auto">
+        <div class="col-12 col-lg-4 my-2">
+            <div class="card">
+                <div class="card-body">
+                    <h3 class="card-title text-info fw-bold">Welcome!</h3>
+                    <p class="card-text">
+                        Everything in this city is worth waiting in line for.
+                    </p>
+                    <p class="card-text">
+                        Cupcake ipsum dolor sit. Amet chocolate cake gummies jelly beans candy bonbon brownie candy.
+                        Gingerbread powder muffin. Icing cotton candy. Croissant icing pie ice cream brownie I love
+                        cheesecake cookie. Pastry chocolate pastry jelly croissant.
+                    </p>
+                    <p class="card-text">Cake sesame snaps sweet tart candy canes tiramisu I love oat cake chocolate
+                        bar. Jelly beans
+                        pastry
+                        brownie sugar plum pastry bear claw tiramisu tootsie roll. Tootsie roll wafer I love chocolate
+                        donuts.
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="col-12 col-lg-4 my-2">
+            <div class="card">
+                <div class="card-body">
+                    <h3 class="card-title text-info fw-bold">Great food</h3>
+                    <figure class="fig">
+                        <img src="images/food.svg" alt="food">
+                    </figure>
+                    <p class="card-text">
+                        Croissant macaroon pie brownie. Cookie marshmallow liquorice gingerbread caramels toffee I love
+                        chocolate. Wafer lollipop dessert. Bonbon jelly beans pudding dessert sugar plum. Marzipan
+                        toffee
+                        dragée chocolate bar candy toffee pudding I love. Gummi bears pie gingerbread lollipop.
+
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="col-12 col-lg-4 my-2">
+            <div class="card">
+                <div class="card-body">
+                    <h3 class="card-title text-info fw-bold">How to get here</h3>
+                    <p class="card-text">
+                        <span class="fw-bold">Plane:</span>Tiramisu caramels gummies chupa chups lollipop muffin.
+                        Jujubes chocolate
+                        caramels cheesecake
+                        brownie lollipop dragée cheesecake.
+                    </p>
+                    <p class="card-text">
+                        <span class="fw-bold">Train: </span>Pie apple pie pudding I love wafer toffee liquorice sesame
+                        snaps lemon
+                        drops. Lollipop gummi
+                        bears dessert muffin I love fruitcake toffee pie.
+                    </p>
+                    <p class="card-text">
+                        <span class="fw-bold">Car:</span> Jelly cotton candy bonbon jelly-o jelly-o I love. I love sugar
+                        plum chocolate cake pie I love
+                        pastry liquorice.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer class="bg-secondary text-center py-2">
+        <p>©2017 Residents of The Best City Ever.</p>
+    </footer>
+
+    <script>
+       $(document).ready(function () {
+    $("nav").find("li").on("click", "a", function () {
+        $('.navbar-collapse.in').collapse('hide');
+    });
+});
+    </script>
+</body>
+
+</html>
