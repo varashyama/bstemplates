@@ -21,6 +21,13 @@
     .desc-info{
       margin-top: -30px;
     } 
+    @media screen and (max-width: 400px) {
+      .card-img{
+        height: 60vh;
+      }
+
+    }
+
   </style>
 
 </head>
@@ -60,9 +67,10 @@
     </div>
   </div>
   <div>
-    <div class="card bg-dark  text-center">
+    <div class="card bg-dark  text-center ">
+      
       <img src="images/banner.png" class="card-img" alt="CRON">
-      <div class="card-img-overlay d-flex flex-column justify-content-center align-items-center">
+      <div class="card-img-overlay d-flex flex-column justify-content-center align-items-center imgtxt ">
         <h1 class="card-title text-white">Welcome To</h1>
         <h1 class="card-title text-info">Content Writing Services</h1>
         <p class="card-text text-light">
@@ -71,7 +79,8 @@
           readable control of a bage when looking
         </p>
         <button type="button" class="btn btn-secondary rounded">Contact</button>
-      </div>
+      
+    </div>
     </div>
   </div>
 
